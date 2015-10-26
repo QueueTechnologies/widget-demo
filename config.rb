@@ -3,6 +3,8 @@ set :js_dir,     'javascripts'
 set :images_dir, 'images'
 set :fonts_dir,  'fonts'
 
+activate :directory_indexes
+
 activate :deploy do |deploy|
   deploy.method       = :git
   deploy.remote       = 'origin'
